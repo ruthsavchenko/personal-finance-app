@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --font-public-sans: var(--font-public-sans);
+    --font-mono: var(--font-geist-mono);
+
+    --color-beige-500: #b9b0a3;
+    --color-beige-100: #f8f4f0;
+
+    --color-grey-900: #201f24;
+    --color-grey-500: #656565;
+    --color-grey-300: #b2b2b2;
+    --color-grey-100: #f2f2f2;
+
+    --color-green: #277c78;
+    --color-yellow: #f2c28c;
+    --color-cyan: #62c9df;
+    --color-navy: #626c70;
+    --color-red: #C94736;
+    --color-purple: #6d629d;
+
+    --color-magenta: #94346f;
+    --color-turquoise: #56c7c6;
+    --color-brown: #8a736f;
+    --color-armygreen: #7f8f61;
+    --color-gold: #c1a360;
+    --color-orange: #de8d49;
+
+    --color-white: #ffffff;
+
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-250: 20px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-[32px] leading-[120%] font-bold;
+    }
+
+    .text-preset-2 {
+        @apply text-[20px] leading-[120%] font-bold;
+    }
+
+    .text-preset-3 {
+        @apply text-[16px] leading-[150%] font-bold;
+    }
+
+    .text-preset-4 {
+        @apply text-[14px] leading-[150%] font-normal;
+    }
+
+    .text-preset-4-bold {
+        @apply text-[14px] leading-[150%] font-bold;
+    }
+
+    .text-preset-5 {
+        @apply text-[12px] leading-[150%] font-normal;
+    }
+
+    .text-preset-5-bold {
+        @apply text-[12px] leading-[150%] font-bold;
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+} */
+
+body {
+    background: var(--beige-100);
+    color: var(--grey-900);
+    font-family: var(--font-public-sans);
+}
